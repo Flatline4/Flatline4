@@ -1,7 +1,7 @@
 import { DomElementParent } from '../DomElementParent';
 import { IElement } from '../Element';
 export default class A extends DomElementParent implements IElement{
-    public download?: string;
+    public download?: boolean;
     public href?: string;
     public hreflang?: string;
     public media?: string;

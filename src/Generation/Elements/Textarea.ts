@@ -1,16 +1,16 @@
 import { IElement } from '../Element';
 import { DomElementParent } from '../DomElementParent';
 export default class Textarea extends DomElementParent implements IElement {
-    public autofocus?: string;
+    public autofocus?: boolean;
     public cols?: string;
     public dirname?: string;
-    public disabled?: string;
+    public disabled?: boolean;
     public form?: string;
     public maxlength?: string;
     public name?: string;
     public placeholder?: string;
-    public readonly?: string;
-    public required?: string;
+    public readonly?: boolean;
+    public required?: boolean;
     public rows?: string;
     public wrap?: string;
     

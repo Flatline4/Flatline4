@@ -4,10 +4,10 @@ export default class Input extends DomElementParent implements IElement {
     public accept?: string;
     public alt?: string;
     public autocomplete?: string;
-    public autofocus?: string;
-    public checked?: string;
+    public autofocus?: boolean;
+    public checked?: boolean;
     public dirname?: string;
-    public disabled?: string;
+    public disabled?: boolean;
     public form?: string;
     public formaction?: string;
     public formenctype?: string;
@@ -23,8 +23,8 @@ export default class Input extends DomElementParent implements IElement {
     public name?: string;
     public pattern?: string;
     public placeholder?: string;
-    public readonly?: string;
-    public required?: string;
+    public readonly?: boolean;
+    public required?: boolean;
     public size?: string;
     public src?: string;
     public step?: string;

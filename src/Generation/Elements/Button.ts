@@ -1,8 +1,8 @@
 import { IElement } from '../Element';
 import { DomElementParent } from '../DomElementParent';
 export default class Button extends DomElementParent implements IElement {
-    public autofocus?: string;
-    public disabled?: string;
+    public autofocus?: boolean;
+    public disabled?: boolean;
     public form?: string;
     public formaction?: string;
     public formenctype?: string;

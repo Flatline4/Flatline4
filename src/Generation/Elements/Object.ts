@@ -6,7 +6,7 @@ export default class Object extends DomElementParent implements IElement {
     public height?: string;
     public name?: string;
     public type?: string;
-    public usemap?: string;
+    public usemap?: boolean;
     public width?: string;
     
     
