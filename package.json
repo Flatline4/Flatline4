@@ -1,0 +1,22 @@
+{
+  "name": "flatline4",
+  "version": "1.0.0",
+  "author": "Flatline4",
+  "private": true,
+  "description": "HackIllinois 2017 project",
+  "scripts": {
+    "build": "npm run clean && npm run build:webpack",
+    "build:webpack": "webpack --progress",
+    "clean": "rimraf build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flatline4/Flatline4.git"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "ts-loader": "^2.0.1",
+    "typescript": "^2.2.1",
+    "webpack": "^2.2.1"
+  }
+}
