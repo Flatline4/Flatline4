@@ -12,7 +12,14 @@ export default class Img extends DomElementParent implements IElement {
     public usemap?: string;
     public width?: string;
     
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("img");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }

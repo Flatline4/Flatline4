@@ -9,7 +9,14 @@ export default class Link extends DomElementParent implements IElement {
     public sizes?: string;
     public type?: string;
     
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("link");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }

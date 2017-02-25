@@ -8,7 +8,14 @@ export default class Col extends DomElementParent implements IElement {
     public valign?: string;
     public width?: string;
 
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("col");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }

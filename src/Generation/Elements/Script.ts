@@ -7,7 +7,14 @@ export default class Script extends DomElementParent implements IElement {
     public src?: string;
     public type?: string;
     
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("q");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }

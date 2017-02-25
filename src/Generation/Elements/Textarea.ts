@@ -14,7 +14,14 @@ export default class Textarea extends DomElementParent implements IElement {
     public rows?: string;
     public wrap?: string;
     
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("textarea");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }

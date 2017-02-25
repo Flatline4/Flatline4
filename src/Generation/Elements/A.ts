@@ -1,6 +1,5 @@
 import { DomElementParent } from '../DomElementParent';
 import { IElement } from '../Element';
-
 export default class A extends DomElementParent implements IElement{
     public download?: string;
     public href?: string;
@@ -10,7 +9,14 @@ export default class A extends DomElementParent implements IElement{
     public target?: string;
     public type?: string;
 
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("a");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }

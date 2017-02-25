@@ -5,7 +5,14 @@ export default class Ol extends DomElementParent implements IElement {
     public start?: string;
     public type?: string;
     
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("ol");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }

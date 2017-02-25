@@ -4,7 +4,14 @@ export default class Label extends DomElementParent implements IElement {
     public for?: string;
     public form?: string;
     
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("label");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }

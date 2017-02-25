@@ -6,7 +6,14 @@ export default class Style extends DomElementParent implements IElement {
     public type?: string;
     
 
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("style");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }

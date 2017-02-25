@@ -6,7 +6,14 @@ export default class Meta extends DomElementParent implements IElement {
     public httpEquiv?: string;
     public name?: string;
     
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("meta");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }

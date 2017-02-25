@@ -10,7 +10,14 @@ export default class Object extends DomElementParent implements IElement {
     public width?: string;
     
     
-    generate() {
+    generate() : HTMLElement{
+        var element = document.createElement("object");
 
+        for(let child of this.Children)
+        {
+            element.appendChild(child.generate());
+        }
+
+        return element;
     }
 }
