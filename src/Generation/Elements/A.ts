@@ -8,17 +8,13 @@ export default class A extends DomElementParent implements IElement{
     public rel?: string;
     public target?: string;
     public type?: string;
+    public click?: () => void;
 
     generate() : HTMLElement{
         var element = document.createElement("a");
 
         if (this.id)
             element.id = this.id;
-        
-        var styleString = this.style.generateCSS();
-        if (styleString) {
-            element.setAttribute('style', styleString);
-        }
         if (this.className) {
             element.className = this.className;
         }
@@ -38,7 +34,17 @@ export default class A extends DomElementParent implements IElement{
             element.type = this.type;
         if (this.media)
             element.setAttribute("media", this.media);
-            
+        if (this.click) {
+            if (!this.style.cursor)
+                this.style.cursor = 'pointer';
+            element.onclick = () => this.click();
+        }
+
+        
+        var styleString = this.style.generateCSS();
+        if (styleString) {
+            element.setAttribute('style', styleString);
+        }
 
         for(let child of this.children)
         {

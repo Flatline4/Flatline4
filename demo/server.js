@@ -29,9 +29,22 @@ const userDetails = [{
         age: 20
     }
 ];
-
 // Parse body so we can get POST request params on req.body
 app.use(bodyParser.json());
+
+//Allow Corss Origin Requests
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+  res.header('Access-Control-Expose-Headers', 'Content-Length');
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(200);
+  } else {
+    return next();
+  }
+});
+
 
 // Route for logging in
 app.post('/login', (req, res) => {
@@ -40,7 +53,7 @@ app.post('/login', (req, res) => {
     const user = null;
     
     // Search through login data to see if user entered valid credentials
-    for (let i = 0; i < userLogins.length; i++) {
+    for (var i = 0; i < userLogins.length; i++) {
         if (username === userLogins[i].username && password === userLogins[i].password) {
             user = userDetails[i];
             break;
@@ -61,6 +74,6 @@ app.post('/login', (req, res) => {
 // Listen on port 3000
 app.listen(3000, err => {
     if (!err) {
-        console.info("Server runnning on http://localhost:3000");
+        console.info("Server runnning on http://localhost:3000 now");
     }
 });
