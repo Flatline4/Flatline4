@@ -40,4 +40,4 @@ The browser bundles are for use in the browser, and the common bundles are for u
 TODO: Write a contributor guide
 
 ## License
-TBD
+MIT
