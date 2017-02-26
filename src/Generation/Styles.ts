@@ -282,89 +282,89 @@ export default class Styles {
         if (this.background)
         	styling += "background:"+this.background+";";
         if (this.backgroundAttachment)
-        	styling += "backgroundAttachment:"+this.backgroundAttachment+";";
+        	styling += "background-attachment:"+this.backgroundAttachment+";";
         if (this.backgroundBlendMode)
-        	styling += "backgroundBlendMode:"+this.backgroundBlendMode+";";
+        	styling += "background-blendMode:"+this.backgroundBlendMode+";";
         if (this.backgroundColor)
-        	styling += "backgroundColor:"+this.backgroundColor+";";
+        	styling += "background-color:"+this.backgroundColor+";";
         if (this.backgroundImage)
-        	styling += "backgroundImage:"+this.backgroundImage+";";
+        	styling += "background-image:"+this.backgroundImage+";";
         if (this.backgroundPosition )
-        	styling += "backgroundPosition :"+this.backgroundPosition +";";
+        	styling += "background-position :"+this.backgroundPosition +";";
         if (this.backgroundRepeat )
-        	styling += "backgroundRepeat :"+this.backgroundRepeat +";";
+        	styling += "background-repeat :"+this.backgroundRepeat +";";
         if (this.backgroundClip )
-        	styling += "backgroundClip :"+this.backgroundClip +";";
+        	styling += "background-clip :"+this.backgroundClip +";";
         if (this.backgroundOrigin )
-        	styling += "backgroundOrigin :"+this.backgroundOrigin +";";
+        	styling += "background-origin :"+this.backgroundOrigin +";";
         if (this.backgroundSize )
-        	styling += "backgroundSize :"+this.backgroundSize +";";
+        	styling += "background-size :"+this.backgroundSize +";";
         if (this.border)
         	styling += "border:"+this.border+";";
         if (this.borderBottom)
-        	styling += "borderBottom:"+this.borderBottom+";";
+        	styling += "border-bottom:"+this.borderBottom+";";
         if (this.borderBottomColor)
-        	styling += "borderBottomColor:"+this.borderBottomColor+";";
+        	styling += "border-bottom-color:"+this.borderBottomColor+";";
         if (this.borderBottomLeftRadius)
-        	styling += "borderBottomLeftRadius:"+this.borderBottomLeftRadius+";";
+        	styling += "border-bottom-left-radius:"+this.borderBottomLeftRadius+";";
         if (this.borderBottomRightRadius)
-        	styling += "borderBottomRightRadius:"+this.borderBottomRightRadius+";";
+        	styling += "border-bottom-right-radius:"+this.borderBottomRightRadius+";";
         if (this.borderBottomStyle)
-        	styling += "borderBottomStyle:"+this.borderBottomStyle+";";
+        	styling += "border-bottom-style:"+this.borderBottomStyle+";";
         if (this.borderBottomWidth)
-        	styling += "borderBottomWidth:"+this.borderBottomWidth+";";
+        	styling += "border-bottom-width:"+this.borderBottomWidth+";";
         if (this.borderColor)
-        	styling += "borderColor:"+this.borderColor+";";
+        	styling += "border-color:"+this.borderColor+";";
         if (this.borderImage)
-        	styling += "borderImage:"+this.borderImage+";";
+        	styling += "border-image:"+this.borderImage+";";
         if (this.borderImageOutset)
-        	styling += "borderImageOutset:"+this.borderImageOutset+";";
+        	styling += "border-image-outset:"+this.borderImageOutset+";";
         if (this.borderImageRepeat)
-        	styling += "borderImageRepeat:"+this.borderImageRepeat+";";
+        	styling += "border-image-repeat:"+this.borderImageRepeat+";";
         if (this.borderImageSlice)
-        	styling += "borderImageSlice:"+this.borderImageSlice+";";
+        	styling += "border-image-slice:"+this.borderImageSlice+";";
         if (this.borderImageSource)
-        	styling += "borderImageSource:"+this.borderImageSource+";";
+        	styling += "border-image-source:"+this.borderImageSource+";";
         if (this.borderImageWidth)
-        	styling += "borderImageWidth:"+this.borderImageWidth+";";
+        	styling += "border-image-width:"+this.borderImageWidth+";";
         if (this.borderLeft)
-        	styling += "borderLeft:"+this.borderLeft+";";
+        	styling += "border-left:"+this.borderLeft+";";
         if (this.borderLeftColor)
-        	styling += "borderLeftColor:"+this.borderLeftColor+";";
+        	styling += "border-left-color:"+this.borderLeftColor+";";
         if (this.borderLeftStyle)
-        	styling += "borderLeftStyle:"+this.borderLeftStyle+";";
+        	styling += "border-left-style:"+this.borderLeftStyle+";";
         if (this.borderLeftWidth)
-        	styling += "borderLeftWidth:"+this.borderLeftWidth+";";
+        	styling += "border-left-width:"+this.borderLeftWidth+";";
         if (this.borderRadius)
-        	styling += "borderRadius:"+this.borderRadius+";";
+        	styling += "border-radius:"+this.borderRadius+";";
         if (this.borderRight)
-        	styling += "borderRight:"+this.borderRight+";";
+        	styling += "border-right:"+this.borderRight+";";
         if (this.borderRightColor)
-        	styling += "borderRightColor:"+this.borderRightColor+";";
+        	styling += "border-right-color:"+this.borderRightColor+";";
         if (this.borderRightStyle)
-        	styling += "borderRightStyle:"+this.borderRightStyle+";";
+        	styling += "border-right-style:"+this.borderRightStyle+";";
         if (this.borderRightWidth)
-        	styling += "borderRightWidth:"+this.borderRightWidth+";";
+        	styling += "border-right-width:"+this.borderRightWidth+";";
         if (this.borderStyle)
-        	styling += "borderStyle:"+this.borderStyle+";";
+        	styling += "border-style:"+this.borderStyle+";";
         if (this.borderTop)
-        	styling += "borderTop:"+this.borderTop+";";
+        	styling += "border-top:"+this.borderTop+";";
         if (this.borderTopColor)
-        	styling += "borderTopColor:"+this.borderTopColor+";";
+        	styling += "border-top-color:"+this.borderTopColor+";";
         if (this.borderTopLeftRadius)
-        	styling += "borderTopLeftRadius:"+this.borderTopLeftRadius+";";
+        	styling += "border-top-left-radius:"+this.borderTopLeftRadius+";";
         if (this.borderTopRightRadius)
-        	styling += "borderTopRightRadius:"+this.borderTopRightRadius+";";
+        	styling += "border-top-right-radius:"+this.borderTopRightRadius+";";
         if (this.borderTopStyle)
-        	styling += "borderTopStyle:"+this.borderTopStyle+";";
+        	styling += "border-top-style:"+this.borderTopStyle+";";
         if (this.borderTopWidth)
-        	styling += "borderTopWidth:"+this.borderTopWidth+";";
+        	styling += "border-top-width:"+this.borderTopWidth+";";
         if (this.borderWidth)
-        	styling += "borderWidth:"+this.borderWidth+";";
+        	styling += "border-width:"+this.borderWidth+";";
         if (this.boxDecorationBreak)
-        	styling += "boxDecorationBreak:"+this.boxDecorationBreak+";";
+        	styling += "box-decoration-break:"+this.boxDecorationBreak+";";
         if (this.boxShadow)
-        	styling += "boxShadow:"+this.boxShadow+";";
+        	styling += "box-shadow:"+this.boxShadow+";";
         if (this.bottom)
         	styling += "bottom:"+this.bottom+";";
         if (this.clear)
@@ -382,37 +382,37 @@ export default class Styles {
         if (this.margin)
         	styling += "margin:"+this.margin+";";
         if (this.marginBottom)
-        	styling += "marginBottom:"+this.marginBottom+";";
+        	styling += "margin-bottom:"+this.marginBottom+";";
         if (this.marginLeft)
-        	styling += "marginLeft:"+this.marginLeft+";";
+        	styling += "margin-left:"+this.marginLeft+";";
         if (this.marginRight)
-        	styling += "marginRight:"+this.marginRight+";";
+        	styling += "margin-right:"+this.marginRight+";";
         if (this.marginTop)
-        	styling += "marginTop:"+this.marginTop+";";
+        	styling += "margin-top:"+this.marginTop+";";
         if (this.maxHeight)
-        	styling += "maxHeight:"+this.maxHeight+";";
+        	styling += "max-height:"+this.maxHeight+";";
         if (this.maxWidth)
-        	styling += "maxWidth:"+this.maxWidth+";";
+        	styling += "max-width:"+this.maxWidth+";";
         if (this.minHeight)
-        	styling += "minHeight:"+this.minHeight+";";
+        	styling += "min-height:"+this.minHeight+";";
         if (this.minWidth)
-        	styling += "minWidth:"+this.minWidth+";";
+        	styling += "min-width:"+this.minWidth+";";
         if (this.overflow)
         	styling += "overflow:"+this.overflow+";";
         if (this.overflowX)
-        	styling += "overflowX:"+this.overflowX+";";
+        	styling += "overflow-x:"+this.overflowX+";";
         if (this.overflowY)
-        	styling += "overflowY:"+this.overflowY+";";
+        	styling += "overflow-y:"+this.overflowY+";";
         if (this.padding)
         	styling += "padding:"+this.padding+";";
         if (this.paddingBottom)
-        	styling += "paddingBottom:"+this.paddingBottom+";";
+        	styling += "padding-bottom:"+this.paddingBottom+";";
         if (this.paddingLeft)
-        	styling += "paddingLeft:"+this.paddingLeft+";";
+        	styling += "padding-left:"+this.paddingLeft+";";
         if (this.paddingRight)
-        	styling += "paddingRight:"+this.paddingRight+";";
+        	styling += "padding-right:"+this.paddingRight+";";
         if (this.paddingTop)
-        	styling += "paddingTop:"+this.paddingTop+";";
+        	styling += "padding-top:"+this.paddingTop+";";
         if (this.position)
         	styling += "position:"+this.position+";";
         if (this.right)
@@ -424,249 +424,249 @@ export default class Styles {
         if (this.width)
         	styling += "width:"+this.width+";";
         if (this.verticalAlign)
-        	styling += "verticalAlign:"+this.verticalAlign+";";
+        	styling += "vertical-align:"+this.verticalAlign+";";
         if (this.zIndex)
-        	styling += "zIndex:"+this.zIndex+";";
+        	styling += "z-index:"+this.zIndex+";";
         if (this.alignContent)
-        	styling += "alignContent:"+this.alignContent+";";
+        	styling += "align-content:"+this.alignContent+";";
         if (this.alignItems)
-        	styling += "alignItems:"+this.alignItems+";";
+        	styling += "align-items:"+this.alignItems+";";
         if (this.alignSelf)
-        	styling += "alignSelf:"+this.alignSelf+";";
+        	styling += "align-self:"+this.alignSelf+";";
         if (this.flex)
         	styling += "flex:"+this.flex+";";
         if (this.flexBasis)
-        	styling += "flexBasis:"+this.flexBasis+";";
+        	styling += "flex-basis:"+this.flexBasis+";";
         if (this.flexDirection)
-        	styling += "flexDirection:"+this.flexDirection+";";
+        	styling += "flex-direction:"+this.flexDirection+";";
         if (this.flexFlow)
-        	styling += "flexFlow:"+this.flexFlow+";";
+        	styling += "flex-flow:"+this.flexFlow+";";
         if (this.flexGrow)
-        	styling += "flexGrow:"+this.flexGrow+";";
+        	styling += "flex-grow:"+this.flexGrow+";";
         if (this.flexShrink)
-        	styling += "flexShrink:"+this.flexShrink+";";
+        	styling += "flex-shrink:"+this.flexShrink+";";
         if (this.flexWrap)
-        	styling += "flexWrap:"+this.flexWrap+";";
+        	styling += "flex-wrap:"+this.flexWrap+";";
         if (this.justifyContent)
-        	styling += "justifyContent:"+this.justifyContent+";";
+        	styling += "justify-content:"+this.justifyContent+";";
         if (this.order)
         	styling += "order:"+this.order+";";
         if (this.hangingPunctuation)
-        	styling += "hangingPunctuation:"+this.hangingPunctuation+";";
+        	styling += "hanging-punctuation:"+this.hangingPunctuation+";";
         if (this.hyphens)
         	styling += "hyphens:"+this.hyphens+";";
         if (this.letterSpacing)
-        	styling += "letterSpacing:"+this.letterSpacing+";";
+        	styling += "letter-spacing:"+this.letterSpacing+";";
         if (this.lineBreak)
-        	styling += "lineBreak:"+this.lineBreak+";";
+        	styling += "line-break:"+this.lineBreak+";";
         if (this.lineHeight)
-        	styling += "lineHeight:"+this.lineHeight+";";
+        	styling += "line-height:"+this.lineHeight+";";
         if (this.overflowWrap)
-        	styling += "overflowWrap:"+this.overflowWrap+";";
+        	styling += "overflow-wrap:"+this.overflowWrap+";";
         if (this.tabSize)
-        	styling += "tabSize:"+this.tabSize+";";
+        	styling += "tab-size:"+this.tabSize+";";
         if (this.textAlign)
-        	styling += "textAlign:"+this.textAlign+";";
+        	styling += "text-align:"+this.textAlign+";";
         if (this.textAlignLast)
-        	styling += "textAlignLast:"+this.textAlignLast+";";
+        	styling += "text-align-last:"+this.textAlignLast+";";
         if (this.textCombineUpright)
-        	styling += "textCombineUpright:"+this.textCombineUpright+";";
+        	styling += "text-combine-upright:"+this.textCombineUpright+";";
         if (this.textIndent)
-        	styling += "textIndent:"+this.textIndent+";";
+        	styling += "text-indent:"+this.textIndent+";";
         if (this.textJustify)
-        	styling += "textJustify:"+this.textJustify+";";
+        	styling += "text-justify:"+this.textJustify+";";
         if (this.textTransform)
-        	styling += "textTransform:"+this.textTransform+";";
+        	styling += "text-transform:"+this.textTransform+";";
         if (this.whiteSpace)
-        	styling += "whiteSpace:"+this.whiteSpace+";";
+        	styling += "white-space:"+this.whiteSpace+";";
         if (this.wordBreak)
-        	styling += "wordBreak:"+this.wordBreak+";";
+        	styling += "word-break:"+this.wordBreak+";";
         if (this.wordSpacing)
-        	styling += "wordSpacing:"+this.wordSpacing+";";
+        	styling += "word-spacing:"+this.wordSpacing+";";
         if (this.wordWrap)
-        	styling += "wordWrap:"+this.wordWrap+";";
+        	styling += "word-wrap:"+this.wordWrap+";";
         if (this.textDecoration)
-        	styling += "textDecoration:"+this.textDecoration+";";
+        	styling += "text-decoration:"+this.textDecoration+";";
         if (this.textDecorationColor)
-        	styling += "textDecorationColor:"+this.textDecorationColor+";";
+        	styling += "text-decoration-color:"+this.textDecorationColor+";";
         if (this.textDecorationLine)
-        	styling += "textDecorationLine:"+this.textDecorationLine+";";
+        	styling += "text-decoration-line:"+this.textDecorationLine+";";
         if (this.textDecorationStyle)
-        	styling += "textDecorationStyle:"+this.textDecorationStyle+";";
+        	styling += "text-decoration-style:"+this.textDecorationStyle+";";
         if (this.textShadow)
-        	styling += "textShadow:"+this.textShadow+";";
+        	styling += "text-shadow:"+this.textShadow+";";
         if (this.textUnderlinePosition)
-        	styling += "textUnderlinePosition:"+this.textUnderlinePosition+";";
+        	styling += "text-underline-position:"+this.textUnderlinePosition+";";
         if (this.fontFace)
-        	styling += "fontFace:"+this.fontFace+";";
+        	styling += "font-face:"+this.fontFace+";";
         if (this.fontFeatureValues)
-        	styling += "fontFeatureValues:"+this.fontFeatureValues+";";
+        	styling += "font-feature-values:"+this.fontFeatureValues+";";
         if (this.font)
         	styling += "font:"+this.font+";";
         if (this.fontFamily)
-        	styling += "fontFamily:"+this.fontFamily+";";
+        	styling += "font-family:"+this.fontFamily+";";
         if (this.fontFeatureSettings)
-        	styling += "fontFeatureSettings:"+this.fontFeatureSettings+";";
+        	styling += "font-feature-settings:"+this.fontFeatureSettings+";";
         if (this.fontKerning)
-        	styling += "fontKerning:"+this.fontKerning+";";
+        	styling += "font-kerning:"+this.fontKerning+";";
         if (this.fontLanguageOverride)
-        	styling += "fontLanguageOverride:"+this.fontLanguageOverride+";";
+        	styling += "font-language-override:"+this.fontLanguageOverride+";";
         if (this.fontSize)
-        	styling += "fontSize:"+this.fontSize+";";
+        	styling += "font-size:"+this.fontSize+";";
         if (this.fontSizeAdjust)
-        	styling += "fontSizeAdjust:"+this.fontSizeAdjust+";";
+        	styling += "font-size-adjust:"+this.fontSizeAdjust+";";
         if (this.fontStretch)
-        	styling += "fontStretch:"+this.fontStretch+";";
+        	styling += "font-stretch:"+this.fontStretch+";";
         if (this.fontStyle)
-        	styling += "fontStyle:"+this.fontStyle+";";
+        	styling += "font-style:"+this.fontStyle+";";
         if (this.fontSynthesis)
-        	styling += "fontSynthesis:"+this.fontSynthesis+";";
+        	styling += "font-synthesis:"+this.fontSynthesis+";";
         if (this.fontVariant)
-        	styling += "fontVariant:"+this.fontVariant+";";
+        	styling += "font-variant:"+this.fontVariant+";";
         if (this.fontVariantAlternates)
-        	styling += "fontVariantAlternates:"+this.fontVariantAlternates+";";
+        	styling += "font-variant-alternates:"+this.fontVariantAlternates+";";
         if (this.fontVariantCaps)
-        	styling += "fontVariantCaps:"+this.fontVariantCaps+";";
+        	styling += "font-variant-caps:"+this.fontVariantCaps+";";
         if (this.fontVariantEastAsian)
-        	styling += "fontVariantEastAsian:"+this.fontVariantEastAsian+";";
+        	styling += "font-variant-east-asian:"+this.fontVariantEastAsian+";";
         if (this.fontVariantLigatures)
-        	styling += "fontVariantLigatures:"+this.fontVariantLigatures+";";
+        	styling += "font-variant-ligatures:"+this.fontVariantLigatures+";";
         if (this.fontVariantNumeric)
-        	styling += "fontVariantNumeric:"+this.fontVariantNumeric+";";
+        	styling += "font-variant-numeric:"+this.fontVariantNumeric+";";
         if (this.fontVariantPosition)
-        	styling += "fontVariantPosition:"+this.fontVariantPosition+";";
+        	styling += "font-variant-position:"+this.fontVariantPosition+";";
         if (this.fontWeight)
-        	styling += "fontWeight:"+this.fontWeight+";";
+        	styling += "font-weight:"+this.fontWeight+";";
         if (this.direction)
         	styling += "direction:"+this.direction+";";
         if (this.textOrientation)
-        	styling += "textOrientation:"+this.textOrientation+";";
+        	styling += "text-orientation:"+this.textOrientation+";";
         if (this.unicodeBidi)
-        	styling += "unicodeBidi:"+this.unicodeBidi+";";
+        	styling += "unicode-bidi:"+this.unicodeBidi+";";
         if (this.userSelect)
-        	styling += "userSelect:"+this.userSelect+";";
+        	styling += "user-select:"+this.userSelect+";";
         if (this.writingMode)
-        	styling += "writingMode:"+this.writingMode+";";
+        	styling += "writing-mode:"+this.writingMode+";";
         if (this.borderCollapse)
-        	styling += "borderCollapse:"+this.borderCollapse+";";
+        	styling += "border-collapse:"+this.borderCollapse+";";
         if (this.borderSpacing)
-        	styling += "borderSpacing:"+this.borderSpacing+";";
+        	styling += "border-spacing:"+this.borderSpacing+";";
         if (this.captionSide)
-        	styling += "captionSide:"+this.captionSide+";";
+        	styling += "caption-side:"+this.captionSide+";";
         if (this.emptyCells)
-        	styling += "emptyCells:"+this.emptyCells+";";
+        	styling += "empty-cells:"+this.emptyCells+";";
         if (this.tableLayout)
-        	styling += "tableLayout:"+this.tableLayout+";";
+        	styling += "table-layout:"+this.tableLayout+";";
         if (this.counterIncrement)
-        	styling += "counterIncrement:"+this.counterIncrement+";";
+        	styling += "counter-increment:"+this.counterIncrement+";";
         if (this.counterReset)
-        	styling += "counterReset:"+this.counterReset+";";
+        	styling += "counter-reset:"+this.counterReset+";";
         if (this.listStyle)
-        	styling += "listStyle:"+this.listStyle+";";
+        	styling += "list-style:"+this.listStyle+";";
         if (this.listStyleImage)
-        	styling += "listStyleImage:"+this.listStyleImage+";";
+        	styling += "list-style-image:"+this.listStyleImage+";";
         if (this.listStylePosition)
-        	styling += "listStylePosition:"+this.listStylePosition+";";
+        	styling += "list-style-position:"+this.listStylePosition+";";
         if (this.listStyleType)
-        	styling += "listStyleType:"+this.listStyleType+";";
+        	styling += "list-style-type:"+this.listStyleType+";";
         if (this.keyframes)
         	styling += "keyframes:"+this.keyframes+";";
         if (this.animation)
         	styling += "animation:"+this.animation+";";
         if (this.animationDelay)
-        	styling += "animationDelay:"+this.animationDelay+";";
+        	styling += "animation-delay:"+this.animationDelay+";";
         if (this.animationDirection)
-        	styling += "animationDirection:"+this.animationDirection+";";
+        	styling += "animation-direction:"+this.animationDirection+";";
         if (this.animationDuration)
-        	styling += "animationDuration:"+this.animationDuration+";";
+        	styling += "animation-duration:"+this.animationDuration+";";
         if (this.animationFillMode)
-        	styling += "animationFillMode:"+this.animationFillMode+";";
+        	styling += "animation-fill-mode:"+this.animationFillMode+";";
         if (this.animationIterationCount)
-        	styling += "animationIterationCount:"+this.animationIterationCount+";";
+        	styling += "animation-iteration-count:"+this.animationIterationCount+";";
         if (this.animationName)
-        	styling += "animationName:"+this.animationName+";";
+        	styling += "animation-name:"+this.animationName+";";
         if (this.animationPlayState)
-        	styling += "animationPlayState:"+this.animationPlayState+";";
+        	styling += "animation-play-state:"+this.animationPlayState+";";
         if (this.animationTimingFunction)
-        	styling += "animationTimingFunction:"+this.animationTimingFunction+";";
+        	styling += "animation-timing-function:"+this.animationTimingFunction+";";
         if (this.backfaceVisibility)
-        	styling += "backfaceVisibility:"+this.backfaceVisibility+";";
+        	styling += "backface-visibility:"+this.backfaceVisibility+";";
         if (this.perspective)
         	styling += "perspective:"+this.perspective+";";
         if (this.perspectiveOrigin)
-        	styling += "perspectiveOrigin:"+this.perspectiveOrigin+";";
+        	styling += "perspective-origin:"+this.perspectiveOrigin+";";
         if (this.transform)
         	styling += "transform:"+this.transform+";";
         if (this.transformOrigin)
-        	styling += "transformOrigin:"+this.transformOrigin+";";
+        	styling += "transform-origin:"+this.transformOrigin+";";
         if (this.transformStyle)
-        	styling += "transformStyle:"+this.transformStyle+";";
+        	styling += "transform-style:"+this.transformStyle+";";
         if (this.transition)
         	styling += "transition:"+this.transition+";";
         if (this.transitionProperties)
-        	styling += "transitionProperties:"+this.transitionProperties+";";
+        	styling += "transition-properties:"+this.transitionProperties+";";
         if (this.transitionDuration)
-        	styling += "transitionDuration:"+this.transitionDuration+";";
+        	styling += "transition-duration:"+this.transitionDuration+";";
         if (this.transitionTimingFunction)
-        	styling += "transitionTimingFunction:"+this.transitionTimingFunction+";";
+        	styling += "transition-timing-function:"+this.transitionTimingFunction+";";
         if (this.transitionDelay)
-        	styling += "transitionDelay:"+this.transitionDelay+";";
+        	styling += "transition-delay:"+this.transitionDelay+";";
         if (this.boxSizing)
-        	styling += "boxSizing:"+this.boxSizing+";";
+        	styling += "box-sizing:"+this.boxSizing+";";
         if (this.content)
         	styling += "content:"+this.content+";";
         if (this.cursor)
         	styling += "cursor:"+this.cursor+";";
         if (this.imeMode)
-        	styling += "imeMode:"+this.imeMode+";";
+        	styling += "ime-mode:"+this.imeMode+";";
         if (this.navDown)
-        	styling += "navDown:"+this.navDown+";";
+        	styling += "nav-down:"+this.navDown+";";
         if (this.navIndex)
-        	styling += "navIndex:"+this.navIndex+";";
+        	styling += "nav-index:"+this.navIndex+";";
         if (this.navLeft)
-        	styling += "navLeft:"+this.navLeft+";";
+        	styling += "nav-left:"+this.navLeft+";";
         if (this.navRight)
-        	styling += "navRight:"+this.navRight+";";
+        	styling += "nav-right:"+this.navRight+";";
         if (this.navUp)
-        	styling += "navUp:"+this.navUp+";";
+        	styling += "nav-up:"+this.navUp+";";
         if (this.outline)
         	styling += "outline:"+this.outline+";";
         if (this.outlineColor)
-        	styling += "outlineColor:"+this.outlineColor+";";
+        	styling += "outline-color:"+this.outlineColor+";";
         if (this.outlineOffset)
-        	styling += "outlineOffset:"+this.outlineOffset+";";
+        	styling += "outline-offset:"+this.outlineOffset+";";
         if (this.outlineStyle)
-        	styling += "outlineStyle:"+this.outlineStyle+";";
+        	styling += "outline-style:"+this.outlineStyle+";";
         if (this.outlineWidth)
-        	styling += "outlineWidth:"+this.outlineWidth+";";
+        	styling += "outline-width:"+this.outlineWidth+";";
         if (this.resize)
         	styling += "resize:"+this.resize+";";
         if (this.textOverflow)
-        	styling += "textOverflow:"+this.textOverflow+";";
+        	styling += "text-overflow:"+this.textOverflow+";";
         if (this.breakAfter)
-        	styling += "breakAfter:"+this.breakAfter+";";
+        	styling += "break-after:"+this.breakAfter+";";
         if (this.breakBefore)
-        	styling += "breakBefore:"+this.breakBefore+";";
+        	styling += "break-before:"+this.breakBefore+";";
         if (this.breakInside)
-        	styling += "breakInside:"+this.breakInside+";";
+        	styling += "break-inside:"+this.breakInside+";";
         if (this.columnCount)
-        	styling += "columnCount:"+this.columnCount+";";
+        	styling += "column-count:"+this.columnCount+";";
         if (this.columnFill)
-        	styling += "columnFill:"+this.columnFill+";";
+        	styling += "column-fill:"+this.columnFill+";";
         if (this.columnGap)
-        	styling += "columnGap:"+this.columnGap+";";
+        	styling += "column-gap:"+this.columnGap+";";
         if (this.columnRule)
-        	styling += "columnRule:"+this.columnRule+";";
+        	styling += "column-rule:"+this.columnRule+";";
         if (this.columnRuleColor)
-        	styling += "columnRuleColor:"+this.columnRuleColor+";";
+        	styling += "column-rule-color:"+this.columnRuleColor+";";
         if (this.columnRuleStyle)
-        	styling += "columnRuleStyle:"+this.columnRuleStyle+";";
+        	styling += "column-rule-style:"+this.columnRuleStyle+";";
         if (this.columnRuleWidth)
-        	styling += "columnRuleWidth:"+this.columnRuleWidth+";";
+        	styling += "column-rule-width:"+this.columnRuleWidth+";";
         if (this.columnSpan)
-        	styling += "columnSpan:"+this.columnSpan+";";
+        	styling += "column-span:"+this.columnSpan+";";
         if (this.columnWidth)
-        	styling += "columnWidth:"+this.columnWidth+";";
+        	styling += "column-width:"+this.columnWidth+";";
         if (this.columns)
         	styling += "columns:"+this.columns+";";
         if (this.widows)
@@ -674,11 +674,11 @@ export default class Styles {
         if (this.orphans)
         	styling += "orphans:"+this.orphans+";";
         if (this.pageBreakAfter)
-        	styling += "pageBreakAfter:"+this.pageBreakAfter+";";
+        	styling += "page-break-after:"+this.pageBreakAfter+";";
         if (this.pageBreakBefore)
-        	styling += "pageBreakBefore:"+this.pageBreakBefore+";";
+        	styling += "page-break-before:"+this.pageBreakBefore+";";
         if (this.pageBreakInside)
-        	styling += "pageBreakInside:"+this.pageBreakInside+";";
+        	styling += "page-break-inside:"+this.pageBreakInside+";";
         if (this.marks)
         	styling += "marks:"+this.marks+";";
         if (this.quotes)
@@ -686,55 +686,55 @@ export default class Styles {
         if (this.filter)
         	styling += "filter:"+this.filter+";";
         if (this.imageOrientation)
-        	styling += "imageOrientation:"+this.imageOrientation+";";
+        	styling += "image-orientation:"+this.imageOrientation+";";
         if (this.imageRendering)
-        	styling += "imageRendering:"+this.imageRendering+";";
+        	styling += "image-rendering:"+this.imageRendering+";";
         if (this.imageResolution)
-        	styling += "imageResolution:"+this.imageResolution+";";
+        	styling += "image-resolution:"+this.imageResolution+";";
         if (this.objectFit)
-        	styling += "objectFit:"+this.objectFit+";";
+        	styling += "object-fit:"+this.objectFit+";";
         if (this.objectPosition)
-        	styling += "objectPosition:"+this.objectPosition+";";
+        	styling += "object-position:"+this.objectPosition+";";
         if (this.mask)
         	styling += "mask:"+this.mask+";";
         if (this.maskType)
-        	styling += "maskType:"+this.maskType+";";
+        	styling += "mask-type:"+this.maskType+";";
         if (this.mark)
         	styling += "mark:"+this.mark+";";
         if (this.markAfter)
-        	styling += "markAfter:"+this.markAfter+";";
+        	styling += "mark-after:"+this.markAfter+";";
         if (this.markBefore)
-        	styling += "markBefore:"+this.markBefore+";";
+        	styling += "mark-before:"+this.markBefore+";";
         if (this.phonemes)
         	styling += "phonemes:"+this.phonemes+";";
         if (this.rest)
         	styling += "rest:"+this.rest+";";
         if (this.restAfter)
-        	styling += "restAfter:"+this.restAfter+";";
+        	styling += "rest-after:"+this.restAfter+";";
         if (this.restBefore)
-        	styling += "restBefore:"+this.restBefore+";";
+        	styling += "rest-before:"+this.restBefore+";";
         if (this.voiceBalance)
-        	styling += "voiceBalance:"+this.voiceBalance+";";
+        	styling += "voice-balance:"+this.voiceBalance+";";
         if (this.voiceDuration)
-        	styling += "voiceDuration:"+this.voiceDuration+";";
+        	styling += "voice-duration:"+this.voiceDuration+";";
         if (this.voicePitch)
-        	styling += "voicePitch:"+this.voicePitch+";";
+        	styling += "voice-pitch:"+this.voicePitch+";";
         if (this.voicePitchRange)
-        	styling += "voicePitchRange:"+this.voicePitchRange+";";
+        	styling += "voice-pitch-range:"+this.voicePitchRange+";";
         if (this.voiceRate)
-        	styling += "voiceRate:"+this.voiceRate+";";
+        	styling += "voice-rate:"+this.voiceRate+";";
         if (this.voiceStress)
-        	styling += "voiceStress:"+this.voiceStress+";";
+        	styling += "voice-stress:"+this.voiceStress+";";
         if (this.voiceVolume)
-        	styling += "voiceVolume:"+this.voiceVolume+";";
+        	styling += "voice-volume:"+this.voiceVolume+";";
         if (this.marqueeDirection)
-        	styling += "marqueeDirection:"+this.marqueeDirection+";";
+        	styling += "marquee-direction:"+this.marqueeDirection+";";
         if (this.marqueePlayCount)
-        	styling += "marqueePlayCount:"+this.marqueePlayCount+";";
+        	styling += "marquee-play-count:"+this.marqueePlayCount+";";
         if (this.marqueeSpeed)
-        	styling += "marqueeSpeed:"+this.marqueeSpeed+";";
+        	styling += "marquee-speed:"+this.marqueeSpeed+";";
         if (this.marqueeStyle)
-        	styling += "marqueeStyl:"+this.marqueeStyle+";";
+        	styling += "marquee-style:"+this.marqueeStyle+";";
 
         return styling;
     }
