@@ -4,7 +4,7 @@ export default class H2 extends DomElementParent implements IElement {
     generate() : HTMLElement{
         var element = document.createElement("h2");
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }
