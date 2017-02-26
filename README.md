@@ -6,7 +6,7 @@ a rich suite of features to web developers developing SPAs including HTML genera
 Flatline4 allows developers to create their website's using entirely JavaScript and eliminates the pain of writing HTML and CSS. Sound intersting? Read on to learn more.
 
 ## Sounds awesome! But how can I use it?
-Becuase Flatline compiles to pure JavaScript, using it is as simple as adding a script tag to your page. See the example below.
+Becuase Flatline compiles to pure JavaScript, using it is as simple as adding a script tag to your page. See the example below. In addition, a demo website is included in the demo folder.
 ```html
 <!doctype html>
 <html>
