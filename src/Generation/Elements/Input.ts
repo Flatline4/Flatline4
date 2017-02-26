@@ -28,8 +28,8 @@ export default class Input extends DomElementParent implements IElement {
     public size?: string;
     public src?: string;
     public step?: string;
-    public type: string;
-    public value: string;
+    public type?: string = 'text';
+    public value?: string;
     public width?: string;
     
     

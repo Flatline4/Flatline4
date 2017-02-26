@@ -10,7 +10,7 @@ export default class Button extends DomElementParent implements IElement {
     public formnovalidate?: string;
     public formtarget?: string;
     public name?: string;
-    public type?: string;
+    public type?: string = 'button';
     public value?: string;
     
     generate() : HTMLElement{
