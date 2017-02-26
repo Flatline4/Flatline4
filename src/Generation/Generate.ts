@@ -1,11 +1,11 @@
 import Body from './Elements/Body';
 import Chain from './Chain';
 
-export function Entry(start: (body: Body, children: Chain) => void) {
+export function Entry(start: (children: Chain<Body>) => void) {
     var body = new Body();
-    var chain = new Chain();
+    var chain = new Chain(body);
 
-    start(body, chain);
+    start(chain);
 
     body.Children = chain.getChildren();
     body.generate();
