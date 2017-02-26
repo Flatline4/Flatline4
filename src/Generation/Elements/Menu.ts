@@ -19,7 +19,7 @@ export default class Menu extends DomElementParent implements IElement {
             element.type = this.type;
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

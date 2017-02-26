@@ -14,7 +14,7 @@ export default class Dialog extends DomElementParent implements IElement {
             element.setAttribute('open', this.open);
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

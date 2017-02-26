@@ -65,7 +65,7 @@ export default class Textarea extends DomElementParent implements IElement {
             element.wrap = this.wrap;
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

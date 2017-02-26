@@ -14,7 +14,7 @@ export default class Table extends DomElementParent implements IElement {
             element.setAttribute('sortable', this.sortable);
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

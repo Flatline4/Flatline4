@@ -4,7 +4,7 @@ import { INodeElement } from './Element';
 
 
 export abstract class DomElementParent extends DomElement{
-    public Children: (IElement | INodeElement)[] = [];
+    public children: (IElement | INodeElement)[] = [];
 
     
 }

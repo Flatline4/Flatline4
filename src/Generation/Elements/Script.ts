@@ -30,7 +30,7 @@ export default class Script extends DomElementParent implements IElement {
             element.setAttribute('type', this.type);
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

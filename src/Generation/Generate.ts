@@ -7,6 +7,6 @@ export function Entry(start: (children: Chain<Body>) => void) {
 
     start(chain);
 
-    body.Children = chain.getChildren();
+    body.children = chain.getChildren();
     body.generate();
 }

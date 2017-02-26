@@ -14,7 +14,7 @@ export default class Q extends DomElementParent implements IElement {
             element.cite = this.cite;
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

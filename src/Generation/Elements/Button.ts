@@ -64,7 +64,7 @@ export default class Button extends DomElementParent implements IElement {
 
 
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

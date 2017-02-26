@@ -19,7 +19,7 @@ export default class Canvas extends DomElementParent implements IElement {
             element.width = this.width;
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

@@ -14,7 +14,7 @@ export default class Li extends DomElementParent implements IElement {
             element.value = this.value;
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

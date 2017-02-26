@@ -14,7 +14,7 @@ export default class Map extends DomElementParent implements IElement {
             element.name = this.name;
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

@@ -39,7 +39,7 @@ export default class Audio extends DomElementParent implements IElement {
             element.src = this.src;
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

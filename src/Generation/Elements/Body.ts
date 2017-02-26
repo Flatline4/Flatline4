@@ -11,7 +11,7 @@ export default class Body extends DomElementParent implements IElement {
         if (this.id) 
             element.id = this.id;
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

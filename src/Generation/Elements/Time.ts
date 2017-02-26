@@ -14,7 +14,7 @@ export default class Time extends DomElementParent implements IElement {
             element.dateTime = this.datetime;
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

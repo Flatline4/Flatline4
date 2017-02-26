@@ -30,7 +30,7 @@ export default class A extends DomElementParent implements IElement{
             element.setAttribute("media", this.media);
             
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

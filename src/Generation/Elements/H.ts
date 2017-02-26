@@ -10,7 +10,7 @@ export default class H extends DomElementParent implements IElement {
             element.setAttribute('num', this.num);
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

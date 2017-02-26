@@ -15,7 +15,7 @@ export default class Label extends DomElementParent implements IElement {
             element.setAttribute('for', this.for);
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }

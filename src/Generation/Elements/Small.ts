@@ -8,7 +8,7 @@ export default class Small extends DomElementParent implements IElement {
             element.id = this.id;
         }
 
-        for(let child of this.Children)
+        for(let child of this.children)
         {
             element.appendChild(child.generate());
         }
