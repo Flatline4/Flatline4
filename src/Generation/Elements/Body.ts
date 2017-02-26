@@ -6,7 +6,14 @@ export default class Body extends DomElementParent implements IElement {
         if (eles.length != 1)
             throw new Error("There can only be 1 body element");
         
-        var element = eles[0];
+        var element = eles[0]; 
+
+        for(var i = 0; i < element.children.length; i++){
+            var el = element.children[i];
+            if (el.tagName.toLowerCase() !== 'script') {
+                element.removeChild(el);
+            }
+        }
 
         if (this.id) 
             element.id = this.id;

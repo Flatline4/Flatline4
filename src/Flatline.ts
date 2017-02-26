@@ -38,3 +38,4 @@ export * from './Generation/Elements/Textarea';
 export * from './Generation/Elements/Title';
 export * from './Generation/Elements/Var';
 export * from './Networking/Ajax';
+export * from './Routing/Routes';
