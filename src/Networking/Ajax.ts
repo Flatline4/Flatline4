@@ -43,7 +43,10 @@ export function get(url: string, successCb: (response: any) => void, failureCb: 
 }
 
 export function post(url: string, data: any, successCb: (response: any) => void, failureCb: (err: Error) => void): void {
-    baseXhr(url, 'post', (xhr) => xhr.send(parameterize(data)), successCb, failureCb);
+    baseXhr(url, 'post', (xhr) => {
+        xhr.setRequestHeader("Content-type", "application/json");
+        xhr.send(JSON.stringify(data))
+    }, successCb, failureCb);
 }
 
 export function baseXhr(url: string, method: string, onfinish: (res: XMLHttpRequest) => void, success?: (response: any) => void, fail?: (response: any) => void) {
@@ -88,52 +91,75 @@ export function baseXhr(url: string, method: string, onfinish: (res: XMLHttpRequ
 }
 
 export function parameterize(obj: any){
-    var s = [];
-    var rbracket = /\[\]$/;
+   function toQueryString(obj, urlEncode) {
+    //
+    // Helper function that flattens an object, retaining key structer as a path array:
+    //
+    // Input: { prop1: 'x', prop2: { y: 1, z: 2 } }
+    // Example output: [
+    //     { path: [ 'prop1' ],      val: 'x' },
+    //     { path: [ 'prop2', 'y' ], val: '1' },
+    //     { path: [ 'prop2', 'z' ], val: '2' }
+    // ]
+    //
+    function flattenObj(x, path?) {
+        var result = [];
 
-    var isArray = function (obj) {
-            return Object.prototype.toString.call(obj) === '[object Array]';
-        }, add = function (k, v) {
-            v = typeof v === 'function' ? v() : v === null ? '' : v === undefined ? '' : v;
-            s[s.length] = encodeURIComponent(k) + '=' + encodeURIComponent(v);
-        }, buildParams = function (prefix, obj) {
-            var i, len, key;
+        path = path || [];
+        Object.keys(x).forEach(function (key) {
+            if (!x.hasOwnProperty(key)) return;
 
-            if (prefix) {
-                if (isArray(obj)) {
-                    for (i = 0, len = obj.length; i < len; i++) {
-                        if (rbracket.test(prefix)) {
-                            add(prefix, obj[i]);
-                        } else {
-                            buildParams(prefix + '[' + (typeof obj[i] === 'object' ? i : '') + ']', obj[i]);
-                        }
-                    }
-                } else if (obj && String(obj) === '[object Object]') {
-                    for (key in obj) {
-                        buildParams(prefix + '[' + key + ']', obj[key]);
-                    }
-                } else {
-                    add(prefix, obj);
-                }
-            } else if (isArray(obj)) {
-                for (i = 0, len = obj.length; i < len; i++) {
-                    add(obj[i].name, obj[i].value);
-                }
+            var newPath = path.slice();
+            newPath.push(key);
+
+            var vals = [];
+            if (typeof x[key] == 'object') {
+                vals = flattenObj(x[key], newPath);
             } else {
-                for (key in obj) {
-                    buildParams(key, obj[key]);
-                }
+                vals.push({ path: newPath, val: x[key] });
             }
-            return s;
-        };
-    return buildParams('', obj).join('&').replace(/%20/g, '+');
+            vals.forEach(function (obj) {
+                return result.push(obj);
+            });
+        });
+
+        return result;
+    } // flattenObj
+
+    // start with  flattening `obj`
+    var parts = flattenObj(obj); // [ { path: [ ...parts ], val: ... }, ... ]
+
+    // convert to array notation:
+    parts = parts.map(function (varInfo) {
+        if (varInfo.path.length == 1) varInfo.path = varInfo.path[0];else {
+            var first = varInfo.path[0];
+            var rest = varInfo.path.slice(1);
+            varInfo.path = first + '[' + rest.join('][') + ']';
+        }
+        return varInfo;
+    }); // parts.map
+
+    // join the parts to a query-string url-component
+    var queryString = parts.map(function (varInfo) {
+        return varInfo.path + '=' + varInfo.val;
+    }).join('&');
+    if (urlEncode) return encodeURIComponent(queryString);else return queryString;
+}
+    return toQueryString(obj, true);
 }
 
 
-var url = 'http://localhost:19196/Api/Test/FetchUsers';
+var url = 'http://localhost:19196/Api/Test/Worked';
 
-get(url, (res) => {
+var account = {
+    Email: 'test@test.com',
+    Password: 'test2@test.com'
+}
+
+//console.log(parameterize(account));
+
+post(url, account, (res) => {
     console.log(res);
 }, (res) => {
     console.log(res);
-})
+});
