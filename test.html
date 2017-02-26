@@ -12,13 +12,130 @@
     </head>
     <body>
         <script>
+            /*
+                Generating this page is a bit much. It needs to be much simpler to be viable.
+                Flatline.entry(function(body) {
+                    body
+                        .nav('navbar navbar-default')
+                            .children()
+                                .div('container')
+                                    .children()
+                                        .div('navbar-header')
+                                            .children()
+                                                .a('navbar-brand', '#', 'Flatline')
+                                            .endChildren()
+                                        div('collapse navbar-collapse')
+                                            .children()
+                                                .ul('nav navbar-nav', links)
+                                            .endChildren()
+                                    .endChildren()
+                            .endChildren();
+                });
+
+
+
+            */
+            var links = ["Home", "About", "Documentation"];
             Flatline.Entry(function(body) {
                 body
-                    .a(function(parent, style, children) {
-                        parent.className = "btn btn-default";
-                        parent.href = 'http://www.google.com/';
+                    .nav(function(parent, style, children) {
+                        parent.className = 'navbar navbar-default';
                         children
-                            .text('Click me!');
+                            .div(function(parent, style, children) {
+                                parent.className = 'container';
+                                children
+                                    .div(function(parent, style, children) {
+                                        parent.className = 'navbar-header';
+                                        children
+                                            .a(function(parent, style, children) {
+                                                parent.className = 'navbar-brand';
+                                                parent.href = '#';
+                                                children
+                                                    .text('Flatline');
+                                            });
+                                    })
+                                    .div(function(parent, style, children) {
+                                        parent.className = 'collapse navbar-collapse';
+                                        children
+                                            .ul(function(parent, style, children) {
+                                                parent.className = 'nav navbar-nav';
+                                                for (var i of links) {
+                                                    children.li(function(parent, style, children) {
+                                                        children
+                                                            .a(function(parent, style, children) {
+                                                                parent.href = '#';
+                                                                children
+                                                                    .text(i);
+                                                            });
+                                                    });
+                                                }
+                                            });
+                                    });
+                            });
+                    })
+                    .div(function(parent, style, children) {
+                        parent.className = 'container';
+                        children
+                            .div(function(parent, style, children) {
+                                parent.className = 'jumbotron';
+                                children
+                                    .h1(function(parent, style, children) {
+                                        children
+                                            .text('Welcome to Flatline4');
+                                    })
+                                    .p(function(parent, style, children) {
+                                        children
+                                            .text('A whole new world of web development awaits (and no one said it was better).');
+                                    })
+                                    .button(function(parent, style, children) {
+                                        parent.className = 'btn btn-primary';
+                                        children
+                                            .text('Learn more');
+                                    });
+                            })
+                            .form(function(parent, style, children) {
+                                children
+                                    .h1(function(parent, style, children) {
+                                        children
+                                            .text('Log in');
+                                    })
+                                    .div(function(parent, style, children) {
+                                        parent.className = 'form-group';
+                                        children
+                                            .label(function(parent, style, children) {
+                                                parent.for = 'inputEmail';
+                                                children
+                                                    .text('Email');
+                                            })
+                                            .input(function(parent, style, children) {
+                                                parent.type = 'email';
+                                                parent.className = 'form-control';
+                                                parent.id = 'inputEmail';
+                                                parent.placeholder = 'Email';
+                                            });
+                                    })
+                                    .div(function(parent, style, children) {
+                                        parent.className = 'form-group';
+                                        children
+                                            .label(function(parent, style, children) {
+                                                parent.for = 'inputPassword';
+                                                children
+                                                    .text('Password');
+                                            })
+                                            .input(function(parent, style, children) {
+                                                parent.type = 'password';
+                                                parent.className = 'form-control';
+                                                parent.id = 'inputPassword';
+                                                parent.placeholder = 'Password';
+                                            });
+                                    })
+                                    .button(function(parent, style, children) {
+                                        parent.type = 'submit';
+                                        parent.className = 'btn btn-default';
+                                        children
+                                            .text('Submit');
+                                    });
+                            });
                     });
             });
         </script>
