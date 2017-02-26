@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>  
-        <script src="build/flatline-browser.js"></script>
+        <script src="../build/flatline-browser.js"></script>
         <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -35,6 +35,9 @@
 
 
             */
+            Flatline.post('http://localhost:3000/login', { username: "bkurek", password: "kurek1" }, function(data) {
+                console.log(data);
+            });
             var links = ["Home", "About", "Documentation"];
             Flatline.Entry(function(body) {
                 body
@@ -103,15 +106,15 @@
                                         parent.className = 'form-group';
                                         children
                                             .label(function(parent, style, children) {
-                                                parent.for = 'inputEmail';
+                                                parent.for = 'inputUsername';
                                                 children
-                                                    .text('Email');
+                                                    .text('Username');
                                             })
                                             .input(function(parent, style, children) {
-                                                parent.type = 'email';
+                                                parent.type = 'text';
                                                 parent.className = 'form-control';
-                                                parent.id = 'inputEmail';
-                                                parent.placeholder = 'Email';
+                                                parent.id = 'inputUsername';
+                                                parent.placeholder = 'Username';
                                             });
                                     })
                                     .div(function(parent, style, children) {

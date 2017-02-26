@@ -15,7 +15,9 @@
     "url": "git+https://github.com/Flatline4/Flatline4.git"
   },
   "devDependencies": {
+    "body-parser": "^1.16.1",
     "cross-env": "^3.1.4",
+    "express": "^4.14.1",
     "rimraf": "^2.6.1",
     "ts-loader": "^2.0.1",
     "typescript": "^2.2.1",
