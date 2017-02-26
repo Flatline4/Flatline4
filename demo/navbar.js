@@ -29,7 +29,7 @@ function AppendNavbar(body, style, children, route){
                                             }
                                             children
                                                 .a(function(parent, style, children) {
-                                                    parent.href = i == 'Home' ? '#': '#' + i;
+                                                    parent.href = i === 'Home' ? '#': '#' + i;
                                                     children
                                                         .text(i);
                                                 });

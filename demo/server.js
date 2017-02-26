@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
-//Allow Corss Origin Requests
+//Allow Cross Origin Requests
 app.use(cors());
 app.options('*', cors());
 /*app.use(function(req, res, next) {

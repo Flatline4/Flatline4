@@ -100,6 +100,7 @@ export class RouteHandling {
             route.Params = parameters;
         route.build();
         RouteHandling.RouteInPlace = true;
+        window.location.href += name;
         return true;
     }
 
