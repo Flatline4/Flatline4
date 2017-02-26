@@ -5,6 +5,7 @@ import Button from './Elements/Button';
 import { IElement } from './Element';
 import { INodeElement } from './Element';
 import { DomElement } from './DomElement';
+import TextNode from './Elements/Text';
 
 export default class Chain<T> {
     private Children: (IElement | INodeElement)[] = [];
@@ -47,6 +48,13 @@ export default class Chain<T> {
         if (children)
             children(chain);
         ele.Children = chain.Children;
+        this.Children.push(ele);
+        return this;
+    }
+
+    text(str: string){
+        var ele = new TextNode();
+        ele.text = str;
         this.Children.push(ele);
         return this;
     }
