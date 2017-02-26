@@ -27,7 +27,7 @@ Becuase Flatline compiles to pure JavaScript, using it is as simple as adding a 
 </html>
 ```
   
-## So, how do I build it?
+## So how do I build it?
 Becuase Flatline4 using npm as its package manager and task runner, installing and building the project is a breeze. Simply clone the repository, navigate to the root directory,
 and run `npm install` to install the project dependencies and `npm run build` to build the project. The build outputs 4 bundles:
 * flatline-browser.js
