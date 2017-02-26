@@ -21,13 +21,13 @@ module.exports = [{
             loader: 'ts-loader'
         }]
     },
-    plugins: [
+    plugins: [/*
         new webpack.optimize.UglifyJsPlugin({
             compress: { warnings: false, dead_code: true },
             mangle: true,
             sourceMap: true,
             beautify: false
-        })
+        })*/
     ]
 }, {
     entry: path.join(__dirname, 'src', 'Flatline.ts'),
