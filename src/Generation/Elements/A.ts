@@ -18,6 +18,11 @@ export default class A extends DomElementParent implements IElement{
         if (styleString) {
             element.setAttribute('style', styleString);
         }
+
+        if (this.className) {
+            element.className = this.className;
+        }
+
         if (this.href)
             element.href = this.href;
         if (this.download)
