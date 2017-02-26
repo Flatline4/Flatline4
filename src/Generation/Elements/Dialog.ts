@@ -9,6 +9,14 @@ export default class Dialog extends DomElementParent implements IElement {
         if (this.id) {
             element.id = this.id;
         }
+        
+        var styleString = this.style.generateCSS();
+        if (styleString) {
+            element.setAttribute('style', styleString);
+        }
+        if (this.className) {
+            element.className = this.className;
+        }
 
         if (this.open) {
             element.setAttribute('open', this.open);

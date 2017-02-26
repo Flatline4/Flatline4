@@ -10,6 +10,14 @@ export default class Q extends DomElementParent implements IElement {
             element.id = this.id;
         }
 
+        var styleString = this.style.generateCSS();
+        if (styleString) {
+            element.setAttribute('style', styleString);
+        }
+        if (this.className) {
+            element.className = this.className;
+        }
+
         if (this.cite) {
             element.cite = this.cite;
         }

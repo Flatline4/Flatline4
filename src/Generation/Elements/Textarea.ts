@@ -21,6 +21,14 @@ export default class Textarea extends DomElementParent implements IElement {
             element.id = this.id;
         }
 
+        var styleString = this.style.generateCSS();
+        if (styleString) {
+            element.setAttribute('style', styleString);
+        }
+        if (this.className) {
+            element.className = this.className;
+        }
+
         if (this.autofocus) {
             element.autofocus = this.autofocus;
         }

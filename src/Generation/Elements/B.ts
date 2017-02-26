@@ -7,6 +7,14 @@ export default class B extends DomElementParent implements IElement {
         if (this.id)
             element.id = this.id;
 
+        var styleString = this.style.generateCSS();
+        if (styleString) {
+            element.setAttribute('style', styleString);
+        }
+        if (this.className) {
+            element.className = this.className;
+        }
+
         for(let child of this.children)
         {
             element.appendChild(child.generate());
