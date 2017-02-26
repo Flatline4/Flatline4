@@ -6,6 +6,14 @@ export default class Time extends DomElementParent implements IElement {
     generate() : HTMLElement{
         var element = document.createElement("time");
 
+        if (this.id) {
+            element.id = this.id;
+        }
+
+        if (this.datetime) {
+            element.dateTime = this.datetime;
+        }
+
         for(let child of this.Children)
         {
             element.appendChild(child.generate());

@@ -3,6 +3,10 @@ import { DomElementParent } from '../DomElementParent';
 export default class Summary extends DomElementParent implements IElement {
     generate() : HTMLElement{
         var element = document.createElement("summary");
+        
+        if (this.id) {
+            element.id = this.id;
+        }
 
         for(let child of this.Children)
         {
