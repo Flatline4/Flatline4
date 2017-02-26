@@ -5,8 +5,9 @@
   "private": true,
   "description": "HackIllinois 2017 project",
   "scripts": {
-    "build": "npm run clean && npm run build:webpack",
-    "build:webpack": "webpack --progress",
+    "build": "npm run clean && npm run build:normal && npm run build:minify",
+    "build:minify": "cross-env MINIFY=1 webpack --progress",
+    "build:normal": "cross-env MINIFY=0 webpack --progress",
     "clean": "rimraf build"
   },
   "repository": {
@@ -14,6 +15,7 @@
     "url": "git+https://github.com/Flatline4/Flatline4.git"
   },
   "devDependencies": {
+    "cross-env": "^3.1.4",
     "rimraf": "^2.6.1",
     "ts-loader": "^2.0.1",
     "typescript": "^2.2.1",
