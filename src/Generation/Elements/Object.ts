@@ -1,6 +1,6 @@
 import { IElement } from '../Element';
 import { DomElementParent } from '../DomElementParent';
-export default class Object extends DomElementParent implements IElement {
+export default class ObjectNode extends DomElementParent implements IElement {
     public data?: string;
     public form?: string;
     public height?: string;
