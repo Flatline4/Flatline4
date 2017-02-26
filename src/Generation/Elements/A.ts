@@ -11,9 +11,13 @@ export default class A extends DomElementParent implements IElement{
 
     generate() : HTMLElement{
         var element = document.createElement("a");
+        var styleString = this.style.generateCSS();
 
         if (this.id)
             element.id = this.id;
+        if (styleString) {
+            element.setAttribute('style', styleString);
+        }
         if (this.href)
             element.href = this.href;
         if (this.download)

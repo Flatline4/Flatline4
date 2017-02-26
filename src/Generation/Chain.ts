@@ -60,70 +60,30 @@ import TextNode from './Elements/Text';
 
 export default class Chain<T> {
     private children: (IElement | INodeElement)[] = [];
-    public style: Styles = new Styles();
 
-    constructor(public Parent: T){
+    constructor(public parent: T){
 
     }
 
-    a(children?: (child: Chain<A>) => void) {
+    a(children?: (element: A, style: Styles, children: Chain<A>) => void) {
         const ele = new A();
         const chain = new Chain(ele);
         if (children) {
-            children(chain);
+            children(ele, ele.style, chain);
         }
-    }
-
-    a(href?: string, children?: (child: Chain<A>) => void, click?: (a: A) => void){
-        var ele = new A();
-        if (href)
-            ele.href = href;
-        var chain = new Chain(ele);
-        if (children)
-            children(chain);
         ele.children = chain.getChildren();
         this.children.push(ele);
         return this;
     }
 
-    b(children?: (b: B) => void) {
-        var ele = new B();
-        if (children)
-            children(ele);
-        this.children.push(ele);
-        return this;
-    }
-
-    br(children?: (br: Br) => void){
-        var br = new Br();
-        if (children)
-            children(br);
-        this.children.push(br);
-        return this;
-    }
-
-    button(click?: (btn: Button) => void, children?: (child: Chain<Button>) => void){
-        var ele = new Button();
-        var chain = new Chain(ele);
-        if (children)
-            children(chain);
-        ele.children = chain.children;
-        this.children.push(ele);
-        return this;
-    }
-
-    text(str: string){
-        var ele = new TextNode();
-        ele.text = str;
+    text(value: string) {
+        const ele = new Text();
+        ele.text = value;
         this.children.push(ele);
         return this;
     }
 
     getChildren() {
         return this.children;
-    }
-
-    getStyle() {
-        return this.style;
     }
 }

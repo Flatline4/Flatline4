@@ -4,5 +4,5 @@ import Styles from './Styles';
 export abstract class DomElement {
     protected id: string;
     protected parent: DomElement;
-    protected style: Styles;
+    public style: Styles = new Styles();
 }

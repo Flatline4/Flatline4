@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>  
+        <script src="build/flatline-browser.js"></script>
+    </head>
+    <body>
+        <script>
+            Flatline.Entry(function(body) {
+                body
+                    .a(function(parent, style, children) {
+                        parent.href = 'http://www.google.com/';
+                        style.color = 'hotpink';
+                        children
+                            .text('Click me!');
+                    });
+
+                    /*
+
+
+
+
+                    */
+            });
+        </script>
+    </body>
+</html>

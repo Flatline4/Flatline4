@@ -13,7 +13,6 @@ export * from './Generation/Elements/Col';
 export * from './Generation/Elements/Div';
 export * from './Generation/Elements/Em';
 export * from './Generation/Elements/Form';
-export * from './Generation/Elements/H';
 export * from './Generation/Elements/Head';
 export * from './Generation/Elements/Hr';
 export * from './Generation/Elements/Img';
