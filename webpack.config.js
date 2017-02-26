@@ -5,7 +5,7 @@ module.exports = [{
     entry: path.join(__dirname, 'src', 'Flatline.ts'),
     output: {
         path: path.join(__dirname, 'build'),
-        filename: "flatline-browser.js",
+        filename: "flatline-browser.min.js",
         library: "Flatline",
         libraryTarget: "var"
     },
@@ -33,7 +33,7 @@ module.exports = [{
     entry: path.join(__dirname, 'src', 'Flatline.ts'),
     output: {
         path: path.join(__dirname, 'build'),
-        filename: "flatline-common.js",
+        filename: "flatline-common.min.js",
         libraryTarget: "commonjs"
     },
     resolve: {
