@@ -284,7 +284,7 @@ export default class Styles {
         if (this.backgroundAttachment)
         	styling += "background-attachment:"+this.backgroundAttachment+";";
         if (this.backgroundBlendMode)
-        	styling += "background-blendMode:"+this.backgroundBlendMode+";";
+        	styling += "background-blend-mode:"+this.backgroundBlendMode+";";
         if (this.backgroundColor)
         	styling += "background-color:"+this.backgroundColor+";";
         if (this.backgroundImage)
