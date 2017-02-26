@@ -34,7 +34,7 @@ export function get(url: string, successCb: (response: any) => void, failureCb: 
     
     // Set up error handler
     xhr.onerror = xhr.onabort = xhr.ontimeout = () => {
-        failureCb(new Error('Error prcoessing AJAX request'));
+        failureCb(new Error('Error processing AJAX request'));
     };
 
     // Send XHR request
