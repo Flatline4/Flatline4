@@ -25,7 +25,7 @@ export * from './Generation/Elements/Link';
 export * from './Generation/Elements/Map';
 export * from './Generation/Elements/Menu';
 export * from './Generation/Elements/Meta';
-export * from './Generation/Elements/Object';
+export * from './Generation/Elements/ObjectNode';
 export * from './Generation/Elements/Ol';
 export * from './Generation/Elements/P';
 export * from './Generation/Elements/Q';
