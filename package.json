@@ -21,6 +21,7 @@
     "rimraf": "^2.6.1",
     "ts-loader": "^2.0.1",
     "typescript": "^2.2.1",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "cors": "^2.8.1"
   }
 }

@@ -12,10 +12,14 @@ export default class Button extends DomElementParent implements IElement {
     public name?: string;
     public type?: string = 'button';
     public value?: string;
+    public click?: () => void;
     
     generate() : HTMLElement{
         var element = document.createElement("button");
 
+        if (this.click){
+            element.onclick = () => this.click();
+        }
         if (this.id) {
             element.id = this.id;
         }

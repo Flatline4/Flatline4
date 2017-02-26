@@ -24,6 +24,9 @@ function AppendNavbar(body, style, children, route){
                                     parent.className = 'nav navbar-nav';
                                     for (var i of links) {
                                         children.li(function(parent, style, children) {
+                                            if (route.Route === i || (!route.Route && i === 'Home')){
+                                                style.border = '1px solid #afafaf';
+                                            }
                                             children
                                                 .a(function(parent, style, children) {
                                                     parent.href = i == 'Home' ? '#': '#' + i;

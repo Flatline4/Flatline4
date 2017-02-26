@@ -20,7 +20,7 @@ Flatline.DefaultRoute(function (body, style, children, route){
                             .text('Learn more');
                     });
             })
-            .form(function(parent, style, children) {
+            .div(function(parent, style, children) {
                 children
                     .h1(function(parent, style, children) {
                         children
@@ -59,8 +59,22 @@ Flatline.DefaultRoute(function (body, style, children, route){
                     .button(function(parent, style, children) {
                         parent.type = 'submit';
                         parent.className = 'btn btn-default';
+                        parent.click = function (){
+                            var usr = document.getElementById('inputUsername').value;
+                            var pwd = document.getElementById('inputPassword').value;
+                            Flatline.post('http://localhost:3000/Login', { username: usr, password: pwd }, function (res){
+                                if (res.message){
+                                    route.reroute('login_fail', res);
+                                } else {
+                                    route.reroute('login_success', res);
+                                }
+                            }, function (res){
+                                alert(res);
+                            });
+                        }
                         children
                             .text('Submit');
+
                     });
             });
     });

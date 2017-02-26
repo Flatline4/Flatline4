@@ -1,7 +1,23 @@
 // You can run the server using node demo/server.js
+const cors = require('cors');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+
+//Allow Corss Origin Requests
+app.use(cors());
+app.options('*', cors());
+/*app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+  res.header('Access-Control-Expose-Headers', 'Content-Length');
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(200);
+  } else {
+    return next();
+  }
+});*/
 
 // Static data to simulate having users
 const userLogins = [{
@@ -32,25 +48,13 @@ const userDetails = [{
 // Parse body so we can get POST request params on req.body
 app.use(bodyParser.json());
 
-//Allow Corss Origin Requests
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
-  res.header('Access-Control-Expose-Headers', 'Content-Length');
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  if (req.method === 'OPTIONS') {
-    return res.sendStatus(200);
-  } else {
-    return next();
-  }
-});
-
 
 // Route for logging in
 app.post('/login', (req, res) => {
-    const username = req.body.username;
-    const password = req.body.password;
-    const user = null;
+
+    var username = req.body.username;
+    var password = req.body.password;
+    var user = null;
     
     // Search through login data to see if user entered valid credentials
     for (var i = 0; i < userLogins.length; i++) {
