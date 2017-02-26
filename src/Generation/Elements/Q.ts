@@ -6,6 +6,14 @@ export default class Q extends DomElementParent implements IElement {
     generate() : HTMLElement{
         var element = document.createElement("q");
 
+        if (this.id) {
+            element.id = this.id;
+        }
+
+        if (this.cite) {
+            element.cite = this.cite;
+        }
+
         for(let child of this.Children)
         {
             element.appendChild(child.generate());

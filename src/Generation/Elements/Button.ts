@@ -16,6 +16,54 @@ export default class Button extends DomElementParent implements IElement {
     generate() : HTMLElement{
         var element = document.createElement("button");
 
+        if (this.id) {
+            element.id = this.id;
+        }
+
+        if (this.autofocus) {
+            element.autofocus = this.autofocus;
+        }
+
+        if (this.disabled) {
+            element.disabled = this.disabled;
+        }
+
+        if (this.formaction) {
+            element.formAction = this.formaction;
+        }
+
+        if (this.formenctype) {
+            element.formEnctype = this.formenctype;
+        }
+
+        if (this.formmethod) {
+            element.formMethod = this.formmethod;
+        }
+
+        if (this.formnovalidate) {
+            element.formNoValidate = this.formnovalidate;
+        }
+
+        if (this.formtarget) {
+            element.formTarget = this.formtarget;
+        }
+
+        if (this.name) {
+            element.name = this.name;
+        }
+
+        if (this.type) {
+            element.type = this.type;
+        }
+
+        if (this.value) {
+            element.value = this.value;
+        }
+
+
+
+
+
         for(let child of this.Children)
         {
             element.appendChild(child.generate());

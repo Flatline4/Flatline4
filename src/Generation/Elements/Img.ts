@@ -2,18 +2,62 @@ import { IElement } from '../Element';
 import { DomElementParent } from '../DomElementParent';
 export default class Img extends DomElementParent implements IElement {
     public alt?: string;
-    public crossorigin?: boolean;
-    public height?: string;
-    public ismap?: string;
+    public crossorigin?: string;
+    public height?: number;
+    public ismap?: boolean;
     public longdesc?: string;
     public sizes?: string;
     public src?: string;
     public srcset?: string;
-    public usemap?: boolean;
-    public width?: string;
+    public usemap?: string;
+    public width?: number;
     
     generate() : HTMLElement{
         var element = document.createElement("img");
+
+        if (this.id) {
+            element.id = this.id;
+        }
+
+        if (this.alt) {
+            element.alt = this.alt;
+        }
+
+        if (this.crossorigin) {
+            element.crossOrigin = this.crossorigin;
+        }
+
+        if (this.height) {
+            element.height = this.height;
+        }
+
+        if (this.ismap) {
+            element.isMap = this.ismap;
+        }
+
+        if (this.longdesc) {
+            element.longDesc = this.longdesc;
+        }
+
+        if (this.sizes) {
+            element.sizes = this.sizes;
+        }
+
+        if (this.src) {
+            element.src = this.src;
+        }
+
+        if (this.srcset) {
+            element.srcset = this.srcset;
+        }
+
+        if (this.usemap) {
+            element.useMap = this.usemap;
+        }
+
+        if (this.width) {
+            element.width = this.width;
+        }
 
         for(let child of this.Children)
         {

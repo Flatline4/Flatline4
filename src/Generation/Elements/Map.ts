@@ -6,6 +6,14 @@ export default class Map extends DomElementParent implements IElement {
     generate() : HTMLElement{
         var element = document.createElement("map");
 
+        if (this.id) {
+            element.id = this.id;
+        }
+
+        if (this.name) {
+            element.name = this.name;
+        }
+
         for(let child of this.Children)
         {
             element.appendChild(child.generate());

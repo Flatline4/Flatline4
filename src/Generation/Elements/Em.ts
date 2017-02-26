@@ -4,6 +4,10 @@ export default class Em extends DomElementParent implements IElement {
     generate() : HTMLElement{
         var element = document.createElement("em");
 
+        if (this.id) {
+            element.id = this.id;
+        }
+
         for(let child of this.Children)
         {
             element.appendChild(child.generate());

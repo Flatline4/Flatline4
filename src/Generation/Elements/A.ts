@@ -12,6 +12,8 @@ export default class A extends DomElementParent implements IElement{
     generate() : HTMLElement{
         var element = document.createElement("a");
 
+        if (this.id)
+            element.id = this.id;
         if (this.href)
             element.href = this.href;
         if (this.download)
