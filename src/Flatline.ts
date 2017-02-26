@@ -3,7 +3,6 @@ export * from './Generation/DomElement';
 export * from './Generation/DomElementParent';
 export * from './Generation/Element';
 export * from './Generation/Generate';
-export * from './Generation/Page';
 export * from './Generation/Elements/A';
 export * from './Generation/Elements/B';
 export * from './Generation/Elements/Body';
