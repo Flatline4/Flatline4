@@ -12,6 +12,22 @@ export default class A extends DomElementParent implements IElement{
     generate() : HTMLElement{
         var element = document.createElement("a");
 
+        if (this.href)
+            element.href = this.href;
+        if (this.download)
+            element.download = "";
+        if (this.hreflang)
+            element.hreflang = this.hreflang;
+        if (this.rel)
+            element.rel = this.rel;
+        if (this.target)
+            element.target = this.target;
+        if (this.type)
+            element.type = this.type;
+        if (this.media)
+            element.setAttribute("media", this.media);
+            
+
         for(let child of this.Children)
         {
             element.appendChild(child.generate());
