@@ -1,4 +1,6 @@
 # Flatline 4
+[![Travis CI](https://img.shields.io/travis/Flatline4/Flatline4.svg?style=flat-square)](https://travis-ci.org/Flatline4/Flatline4)
+[![Gitter](https://img.shields.io/badge/chat-Gitter-ff69b4.svg?style=flat-square)](https://gitter.im/Flatline4/Lobby)
 
 ## What is Flatline4?
 Flatline4: the definitive web development experience. Flatline4 is a new front-end framework that's here to stay. Written purely in TypeScript, Flatline provides
