@@ -1,0 +1,9 @@
+extends: standard
+plugins:
+  - standard
+  - promise
+  - typescript
+parser: typescript-eslint-parser
+rules:
+  "typescript/type-annotation-spacing":
+    - error 
