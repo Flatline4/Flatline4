@@ -15,7 +15,7 @@ Becuase Flatline compiles to pure JavaScript, using it is as simple as adding a 
   <body>
     <script src="flatline-browser.min.js"></script>
     <script>
-      Flatline.Entry(function(body) {
+      Flatline.Route('home', function(body) {
         body
           .h1(function(parent, style, children) {
             children
