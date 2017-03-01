@@ -6,9 +6,12 @@
   "description": "HackIllinois 2017 project",
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean && npm run build:normal && npm run build:minify",
-    "build:minify": "cross-env MINIFY=1 webpack --progress",
-    "build:normal": "cross-env MINIFY=0 webpack --progress",
+    "build": "npm run lint && npm run clean && npm run build:normal && npm run build:minify",
+    "build:minify": "webpack --env.minify --progress",
+    "build:normal": "webpack --progress",
+    "dev": "webpack  --progress --colors --watch",
+    "lint": "eslint ./src/**/*.ts",
+    "lint:fix": "eslint ./src/**/*.ts --fix",
     "clean": "rimraf build"
   },
   "repository": {
@@ -17,12 +20,17 @@
   },
   "devDependencies": {
     "body-parser": "^1.16.1",
-    "cross-env": "^3.1.4",
+    "cors": "^2.8.1",
+    "eslint": "^3.16.1",
+    "eslint-config-standard": "^7.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "eslint-plugin-typescript": "^0.1.0",
     "express": "^4.14.1",
     "rimraf": "^2.6.1",
     "ts-loader": "^2.0.1",
     "typescript": "^2.2.1",
-    "webpack": "^2.2.1",
-    "cors": "^2.8.1"
+    "typescript-eslint-parser": "^2.0.0",
+    "webpack": "^2.2.1"
   }
 }
