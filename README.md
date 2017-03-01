@@ -34,6 +34,8 @@ and run `npm install` to install the project dependencies and `npm run build` to
 * flatline-common.min.js
 The browser bundles are for use in the browser, and the common bundles are for use in NodeJS.
 
+> During development, use `npm run dev` instead to only build unminified files and watch for changes
+
 ## Contributor Guide
 TODO: Write a contributor guide
 
