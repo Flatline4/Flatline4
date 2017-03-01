@@ -6,7 +6,7 @@
   "description": "HackIllinois 2017 project",
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean && npm run build:normal && npm run build:minify",
+    "build": "npm run lint && npm run clean && npm run build:normal && npm run build:minify",
     "build:minify": "webpack --env.minify --progress",
     "build:normal": "webpack --progress",
     "dev": "webpack  --progress --colors --watch",
