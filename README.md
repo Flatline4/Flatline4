@@ -10,20 +10,18 @@ Becuase Flatline compiles to pure JavaScript, using it is as simple as adding a 
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        <script src="flatline-browser.min.js"></script>
-        <script>
-            Flatline.Entry(function(body) {
-                body
-                    .h1(function(parent, style, children) {
-                        children
-                            .text('Hello World!');
-                    });
-            });
-        </script>
-    </body>
+  <body>
+    <script src="flatline-browser.min.js"></script>
+    <script>
+      Flatline.Entry(function(body) {
+        body
+          .h1(function(parent, style, children) {
+            children
+              .text('Hello World!');
+          });
+      });
+    </script>
+  </body>
 </html>
 ```
   
