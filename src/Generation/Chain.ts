@@ -69,10 +69,14 @@ import { INodeElement } from './Element';
 import { DomElement } from './DomElement';
 
 export default class Chain<T> {
-    private children: (IElement | INodeElement)[] = [];
+    public parent: T;
+    private children: (IElement | INodeElement)[];
+    private current: (IElement | INodeElement);
 
-    constructor(public parent: T){
-
+    constructor(parent: T){
+        this.parent = parent;
+        this.children = [];
+        this.current = null;
     }
 
     a(children?: (element: A, style: Styles, children: Chain<A>) => void) {
