@@ -59,6 +59,7 @@ Flatline.DefaultRoute(function (body, style, children, route){
                     .button(function(parent, style, children) {
                         parent.type = 'submit';
                         parent.className = 'btn btn-default';
+                        
                         parent.click = function (){
                             var usr = document.getElementById('inputUsername').value;
                             var pwd = document.getElementById('inputPassword').value;

@@ -3,7 +3,7 @@
 ## What is Flatline4?
 Flatline4: the definitive web development experience. Flatline4 is a new front-end framework that's here to stay. Written purely in TypeScript, Flatline provides
 a rich suite of features to web developers developing SPAs including HTML generation, routing, and AJAX requests (that's asynchronous javascript and xml request, not the dish soap).
-Flatline4 allows developers to create their website's using entirely JavaScript and eliminates the pain of writing HTML and CSS. Sound intersting? Read on to learn more.
+Flatline4 allows developers to create their website's using entirely JavaScript or TypeScript and eliminates the pain of writing HTML and CSS. Sound intersting? Read on to learn more.
 
 ## Sounds awesome! But how can I use it?
 Becuase Flatline compiles to pure JavaScript, using it is as simple as adding a script tag to your page. See the example below. In addition, a demo website is included in the demo folder.
