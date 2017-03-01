@@ -33,7 +33,7 @@ export * from './Generation/Elements/Span';
 export * from './Generation/Elements/Strong';
 export * from './Generation/Elements/Style';
 export * from './Generation/Elements/Table';
-export * from './Generation/Elements/Text';
+export * from './Generation/Elements/TextNode';
 export * from './Generation/Elements/Textarea';
 export * from './Generation/Elements/Title';
 export * from './Generation/Elements/Var';

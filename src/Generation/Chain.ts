@@ -54,7 +54,7 @@ import Summary from './Elements/Summary';
 import Table from './Elements/Table';
 import Tbody from './Elements/Tbody';
 import Td from './Elements/Td';
-import Text from './Elements/Text';
+import Text from './Elements/TextNode';
 import Textarea from './Elements/Textarea';
 import Th from './Elements/Th';
 import Thead from './Elements/Thead';
@@ -67,7 +67,6 @@ import Video from './Elements/Video';
 import { IElement } from './Element';
 import { INodeElement } from './Element';
 import { DomElement } from './DomElement';
-import TextNode from './Elements/Text';
 
 export default class Chain<T> {
     private children: (IElement | INodeElement)[] = [];
