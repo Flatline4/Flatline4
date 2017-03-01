@@ -24,7 +24,7 @@ Flatline.Route('About', function(body, style, children, route){
                             .text('Our Team');
                 })
             })
-            var users = ['Joe', 'Brian', 'Christian'];
+            var users = ['Joe', 'Brian', 'Christian', 'Pranay'];
             for(var usr of users){
                 c.div(function (p,s,c){
                     p.className = 'col-lg-4 col-sm-6 text-center';
