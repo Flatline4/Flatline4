@@ -8,7 +8,7 @@ Flatline4 allows developers to create their website's using entirely JavaScript 
 ## Sounds awesome! But how can I use it?
 Becuase Flatline compiles to pure JavaScript, using it is as simple as adding a script tag to your page. See the example below. In addition, a demo website is included in the demo folder.
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
     </head>

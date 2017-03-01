@@ -32,7 +32,7 @@ Flatline.Route('About', function(body, style, children, route){
                         p.className = 'img-circle img-responsive img-center';
                         s.height = '200px';
                         s.width = '200px';
-                        p.src = '../logo/Logo.png';
+                        p.src = '../logo/Logo.jpg';
                     }).h3(function (p,s,c){
                         c.text(usr);
                     }).p(function (p,s,c){
